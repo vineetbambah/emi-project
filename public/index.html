@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>BridgeSim</title>
+</head>
+<body>
+<div class="scroll-smooth">
+    <div class="hero bg-gradient-to-br from-white from-[-70%] via-[#080808] to-black p-10">
+        <div><img class="m-auto" src="/res/logo.svg" alt="logo"></div>
+        <div class="grid grid-flow-col">
+            <div class="about text-white m-32">
+                <h1 class="font-semibold text-3xl">About Our Project</h1>
+                <p class="text-2xl w-[24vw] leading-28 mt-2">BridgeSim is a dynamic simulation project designed to provide a comprehensive exploration of AC bridges.<br>
+                    Through interactive simulations, users can delve into the intricate world of AC circuits, understanding bridge configurations.<br> 
+                    From Wheatstone to Wien, the project offers a hands-on experience, allowing users to manipulate parameters and gain a deep understanding of circuit behavior. </p>
+            </div>
+            <div class="screenCapture"></div>
+        </div>
+        <div class="grid grid-flow-col grid-cols-3">
+            <span></span>
+            <div class="m-auto"><button class="rounded-md bg-white w-40 h-20 font-bold text-xl hover:underline" onclick="scrollToSimulator()">SIMULATE</button></div> 
+            <a class="text-white col-start-3" href="#team">Meet our team</a></div>
+    </div>
+    <div class="simulator bg-gradient-to-br from-white from-[-70%] via-[#080808] to-black">
+        <div class="p-16">
+            <img class="m-auto"src="/res/logo.svg" alt="">
+        </div>
+        <div class = "circuit flex flex-col align-center justify-center items-center h-[86vh]">
+            <h1 class="circuitName text-white font-semibold text-4xl">Name of the circuit</h1>
+            <div class = "cycle h-[80vh] grid grid-flow-col">
+                <button class="bg-white text-black h-16 mt-60 p-3 rounded-md previous">Previous</button>
+                <div class = "rounded-lg overflow-hidden m-16">
+                    <img id="circuitDiagram" class="" src="res/mib.jpg" alt="Circuit Diagram">
+                </div>
+                <button class="bg-white text-black h-16 mt-60 p-3 rounded-md next">Next</button>
+            </div>
+        </div>
+        <div id="calculations">
+            <div id="inputs"></div>
+            <div id="output"></div>
+        </div>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
