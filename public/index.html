@@ -25,22 +25,129 @@
             <a class="text-white col-start-3" href="#team">Meet our team</a></div>
     </div>
     <div class="simulator bg-gradient-to-br from-white from-[-70%] via-[#080808] to-black">
-        <div class="p-16">
-            <img class="m-auto"src="/res/logo.svg" alt="">
+        <div class="p-12 sticky">
+            <img class=""src="/res/logo.svg" alt="">
         </div>
-        <div class = "circuit flex flex-col align-center justify-center items-center h-[86vh]">
+        <div class = "circuit flex flex-col align-center justify-center items-center h-[60vh]">
             <h1 class="circuitName text-white font-semibold text-4xl">Name of the circuit</h1>
             <div class = "cycle h-[80vh] grid grid-flow-col">
-                <button class="bg-white text-black h-16 mt-60 p-3 rounded-md previous">Previous</button>
+                <button class="bg-white  text-black h-16 mt-60 p-3 rounded-md previous">Previous</button>
                 <div class = "rounded-lg overflow-hidden m-16">
                     <img id="circuitDiagram" class="" src="res/mib.jpg" alt="Circuit Diagram">
                 </div>
                 <button class="bg-white text-black h-16 mt-60 p-3 rounded-md next">Next</button>
             </div>
         </div>
-        <div id="calculations">
-            <div id="inputs"></div>
-            <div id="output"></div>
+        <div id="calculations" class="flex justify-center text-white">
+            <div id="inputs" class="">
+                <div id="mibi" class="grid grid-flow-row text-white">
+                        <div>
+                            <label for="l2" class="m-auto">L2</label>
+                            <input type="number" name="l2" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                        </div>
+                        <div>
+                            <label for="r2" class="m-auto">R2</label>
+                            <input type="number" name="r2" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                        </div>
+                        <div>
+                            <label for="r3" class="m-auto">R3</label>
+                            <input type="number" name="r3" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                        </div>
+                        <div>
+                            <label for="r4" class="m-auto">R4</label>
+                            <input type="number" name="r4" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                        </div>
+                        <button class="rounded-md bg-white p-2 text-black" id="mibC">Calculate</button>
+                </div>
+                <div id="desautyi" class="grid grid-flow-row">
+                    <div>
+                        <label for="c2" class="m-auto">C2</label>
+                        <input type="number" name="c2" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                    </div>
+                    <div>
+                        <label for="r3" class="m-auto">R3</label>
+                        <input type="number" name="r3" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                    </div>
+                    <div>
+                        <label for="r4" class="m-auto">R4</label>
+                        <input type="number" name="r4" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                    </div>
+                    <button class="rounded-md bg-white p-2 text-black" id="dsC">Calculate</button>
+                </div>
+                <div id="scheringi" class="grid grid-flow-row">
+                    <div>
+                        <label for="c2" class="m-auto">C2</label>
+                        <input type="number" name="c2" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                    </div>
+                    <div>
+                        <label for="c3" class="m-auto">C3</label>
+                        <input type="number" name="c3" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                    </div>
+                    <div>
+                        <label for="c4" class="m-auto">C4</label>
+                        <input type="number" name="c4" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                    </div>
+                    <div>
+                        <label for="r3" class="m-auto">R3</label>
+                        <input type="number" name="r3" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                    </div>
+                    <div>
+                        <label for="r4" class="m-auto">R4</label>
+                        <input type="number" name="r4" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                    </div>
+                    <button class="rounded-md bg-white p-2 text-black" id="schC">Calculate</button>
+                </div>
+                <div id="oweni" class="grid grid-flow-row">
+                    <div>
+                        <label for="c2" class="m-auto">C2</label>
+                        <input type="number" name="c2" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                    </div>
+                    <div>
+                        <label for="c4" class="m-auto">C4</label>
+                        <input type="number" name="c4" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                    </div>
+                    <div>
+                        <label for="r2" class="m-auto">R2</label>
+                        <input type="number" name="r2" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                    </div>
+                    <div>
+                        <label for="r3" class="m-auto">R3</label>
+                        <input type="number" name="r3" id="" class="rounded-sm bg-slate-800 w-11 m-4">
+                    </div>
+                    <button class="rounded-md bg-white p-2 text-black" id="owC">Calculate</button>
+                </div>
+            </div>
+            <div id="output">
+                <div id="mibo" class="text-white">
+                    <div>
+                        <h1>R1 : </h1>
+                    </div>
+                    <div>
+                       <h1>L1 : </h1>
+                    </div>
+                </div>
+                <div id="desautyo" class="grid grid-flow-row">
+                    <div>
+                        <h1>C1 : </h1>
+                    </div>
+                </div>
+                <div id="scheringo" class="grid grid-flow-row">
+                    <div>
+                        <h1>r1 : </h1>
+                    </div>
+                    <div>
+                        <h1>C1 : </h1>
+                    </div>
+                </div>
+                <div id="oweno" class="grid grid-flow-row">
+                    <div>
+                        <h1>L1 : </h1>
+                    </div>
+                    <div>
+                        <h1>R1 : </h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
